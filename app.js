@@ -19,7 +19,7 @@ app.use(cors({
     'https://localhost:3001',
     'https://api.amubinov.nomoredomains.xyz',
     'http://api.amubinov.nomoredomains.xyz',
-    'https:/amubinov.nomoredomains.xyz',
+    'https://amubinov.nomoredomains.xyz',
     'http://amubinov.nomoredomains.xyz',
   ],
   credentials: true,
@@ -28,11 +28,6 @@ app.use(cors({
   allowedHeaders: ['Content-Type', 'Authorization', 'Origin'],
   optionsSuccessStatus: 204,
 }));
-
-// const limiter = rateLimit({
-//   windowMs: 15 * 60 * 1000, // за 15 минут
-//   max: 100, // можно совершить максимум 100 запросов с одного IP
-// });
 
 app.use(helmet());
 
